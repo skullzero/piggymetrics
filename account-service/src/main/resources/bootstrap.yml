@@ -1,9 +1,13 @@
 spring:
   application:
     name: account-service
-  cloud:
+  cloud: 
     config:
-      uri: http://config:8888
+      uri: http://localhost:8888
       fail-fast: true
-      password: ${CONFIG_SERVICE_PASSWORD}
+      password: admin
       username: user
+      name: account-service
+ 
+server:
+  port: 38080

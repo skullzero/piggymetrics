@@ -24,4 +24,6 @@ security:
 
 spring:
   rabbitmq:
-    host: rabbitmq
+    host: 127.0.0.1
+    ports:
+      - 5672:5672    
